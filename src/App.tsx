@@ -1,12 +1,12 @@
-import './App.css'
-import { List } from './components/List'
-import { ListItem } from './components/ListItem'
+import "./App.css";
+import Article from "./components/Article";
+import { List } from "./components/List";
+import { ListItem } from "./components/ListItem";
 
 function App() {
-
   return (
     <>
-      <List level={1} color='blue'>
+      <List level={1} color="blue">
         <ListItem>Ola mundo</ListItem>
         <ListItem>Ola professor</ListItem>
         <ListItem>Ola Igor Julliano</ListItem>
@@ -14,12 +14,13 @@ function App() {
         <ListItem>Ola Micherlane</ListItem>
       </List>
       <hr />
-      <List level={2} color='purple'>
+      <List level={2} color="purple">
         <ListItem>Ola Micherlane</ListItem>
         <ListItem>Ola Micherlane</ListItem>
       </List>
+      <Article />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
